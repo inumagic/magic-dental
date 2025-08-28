@@ -25,6 +25,22 @@ https://templatemo.com/tm-593-personal-shape
             overflow: hidden;
         }
 
+        .footer::before,
+.footer::after {
+  pointer-events: none;  /* 不要阻擋滑鼠點擊 */
+}
+.footer a {
+  position: relative;   /* 確保連結顯示在裝飾層上 */
+  z-index: 1;
+  color: #fff;          /* 給明顯顏色 */
+  display: block;       /* 每個 a 佔一行，點擊範圍比較好點 */
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
         .footer::before {
             content: '';
             position: absolute;
@@ -34,6 +50,8 @@ https://templatemo.com/tm-593-personal-shape
             bottom: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="footer-grid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M 12 0 L 0 0 0 12" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23footer-grid)"/></svg>');
             opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
         }
 
         .footer::after {
@@ -112,8 +130,13 @@ https://templatemo.com/tm-593-personal-shape
 
             .footer-right a {
                 font-size: 0.85rem;
+                position: relative;
+                z-index: 1;
             }
         }
+/* 行動選單關閉時不攔截點擊；開啟時再啟用 */
+.mobile-menu { pointer-events: none; }
+.mobile-menu.active { pointer-events: auto; }
 
         @media (max-width: 480px) {
             .footer-right {
@@ -652,11 +675,24 @@ https://templatemo.com/tm-593-personal-shape
             align-items: center;
             position: relative;
         }
+        .fade-in,
+.slide-in-left,
+.slide-in-right {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* 手機版時縮小 about-content 的間距 */
+@media (max-width: 768px) {
+  .about-content {
+    gap: 2rem;  /* 或 1.5rem，看你想多近 */
+  }
+}
+
 
         .about-image {
             width: 100%;
             height: 500px;
-            background: url('images/BA_XF1_773.jpg') center/cover;
+            background: url('') center/cover;
             border-radius: 30px;
             position: relative;
             overflow: hidden;
@@ -1141,6 +1177,9 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         @media (max-width: 768px) {
+            .about-content {
+    gap: 2rem;  /* 或 1.5rem，看你想多近 */
+  }
             .nav-links {
                 display: none;
             }
