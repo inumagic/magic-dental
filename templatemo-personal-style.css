@@ -628,7 +628,7 @@ https://templatemo.com/tm-593-personal-shape
         .section-title {
             text-align: center;
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 600;
             margin-bottom: 4rem;
             background: var(--gradient-elegant);
@@ -721,7 +721,7 @@ https://templatemo.com/tm-593-personal-shape
 
         .about-text p {
             font-size: 1.1rem;
-            color: var(--text-secondary);
+            color: black;
             margin-bottom: 2rem;
             line-height: 1.8;
         }
@@ -1220,7 +1220,7 @@ https://templatemo.com/tm-593-personal-shape
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .nav-container {
@@ -1245,7 +1245,7 @@ https://templatemo.com/tm-593-personal-shape
 
 .news-text p{
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-       color: black;
+    color: black;
     font-size: 1.2rem;
     line-height: 2;
 }
@@ -1303,6 +1303,3 @@ img {
 strong{
     color: #1B2C51;
 }
-
-
-
