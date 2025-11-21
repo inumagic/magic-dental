@@ -79,7 +79,7 @@
 
           <!-- News Text -->
           <div class="news-text">   
-            <h3>真實案例分享｜潘爸爸的改變，從60歲咬不動，到80歲什麼都能吃。</h3>
+            <h3 style="color: #bb5a99;">真實案例分享｜潘爸爸的改變，從60歲咬不動，到80歲什麼都能吃。</h3>
             <img src="img/60.jpg" style="border-radius: 10px;">
             <p><strong>Before｜60歲：連咀嚼都是一種困難</strong></p>
             <p>你可能很難想像，潘院長的爸爸，60歲時，潘爸爸牙周病嚴重，牙齒鬆動、牙齦退縮，咬東西沒力，吃飯總是小口小口、勉強吞嚥。</p>
@@ -123,9 +123,53 @@
             <div class="news-text">   
             <h3>什麼是水雷射牙周病治療？</h3>
             <p>水雷射牙周病治療，是一種利用「水」與「雷射能量」共同作用，溫和而精準地把牙周囊袋裡的細菌、牙結石與發炎組織清除乾淨的技術。當雷射能量碰到水分子時，水會瞬間產生細微的爆破力量，像是在牙齦深處進行微型清洗，不但能把髒污震散，也不會傷害健康的牙齦和牙齒。因為沒有傳統刮除器具的震動與噪音，治療時的感覺通常更輕鬆，術後也比較不會腫、流血或疼痛，傷口小、恢復快，是許多怕看牙或不喜歡手術感的患者非常喜歡的方式。</p>
-            <p>水雷射最大的優勢，是能深入器械較難觸及的牙周囊袋，把細菌真正「徹底清乾淨」，也因為高效滅菌，治療過程中不容易發生感染問題。更重要的是，它能啟動牙齦與牙槽骨的修復反應，協助發炎組織逐漸恢復健康，是一種同時兼具清除與修復能力的治療工具。</p>
-            <p>除了牙周病之外，水雷射還能應用在許多其他項目，例如牙齦整形、植體周圍炎、舌繫帶與唇繫帶的處理、改善牙齦發黑、輔助根管滅菌、微創蛀牙治療、甚至在植牙手術中進行清創與骨頭修形等。因為能作用深、傷口小、恢復快，讓它成為現代牙科中非常受歡迎的技術。</p>
-            <p>簡單來說，水雷射是一種更舒適、更安全、效果更好的牙周病治療方式，減少疼痛與不適，幫助牙齦真正恢復健康，也能降低反覆發炎的機率。對於想改善牙周問題、又希望過程輕鬆、恢復快速的患者，是非常適合的選擇。</p>
+            <p>水雷射最大的優勢，是能深入器械較難觸及的牙周囊袋，把細菌真正「徹底清乾淨」，也因為高效滅菌，治療過程中不容易發生感染問題。更重要的是，它能啟動牙齦與牙槽骨的修復反應，協助發炎組織逐漸恢復健康，是一種同時兼具清除與修復能力的治療工具。<span onclick="toggleMore()" 
+          style="text-decoration: underline; color:#6f5abb; cursor: pointer;">
+        了解更多
+    </span></p>
+            <style>
+#moreContent {
+    display: none;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+.more-btn {
+    padding: 10px 20px;
+    border: 2px solid #9B90C2;
+    background-color: #dfd6ff;
+    color: #6f5abb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.more-btn:hover {
+    background-color: #dfd6ff;
+    color: white;
+}
+</style>
+
+
+
+<div id="moreContent">
+    <p>除了牙周病之外，水雷射還能應用在許多其他項目，例如牙齦整形、植體周圍炎、舌繫帶與唇繫帶的處理、改善牙齦發黑、輔助根管滅菌、微創蛀牙治療、甚至在植牙手術中進行清創與骨頭修形等。因為能作用深、傷口小、恢復快，讓它成為現代牙科中非常受歡迎的技術。</p>
+    <p>簡單來說，水雷射是一種更舒適、更安全、效果更好的牙周病治療方式，減少疼痛與不適，幫助牙齦真正恢復健康，也能降低反覆發炎的機率。對於想改善牙周問題、又希望過程輕鬆、恢復快速的患者，是非常適合的選擇。</p>
+</div>
+
+<script>
+function toggleMore() {
+    var content = document.getElementById("moreContent");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+</script>
+
+            
+            
           
             <div class=" text-center">
             <a href="https://line.me/R/ti/p/@vfy7029w" class="btn py-2 px-4" style="font-size: 1.2rem;
