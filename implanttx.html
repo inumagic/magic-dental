@@ -75,12 +75,12 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
 
     
 
-    <!-- About Section -->
-    <!-- About Section -->
+    <!-- About Section 
+    <!-- About Section 
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title fade-in">微創植牙</h2>
-        <!-- 上方的文字 -->
+        <!-- 上方的文字
         
             <div class="about-content">
                 <div class="about-iframe slide-in-left">
@@ -115,7 +115,19 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+    
+
+<script>
+// 點擊目錄時在主控台顯示
+const links = document.querySelectorAll("#menu a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        console.log("跳到：" + link.textContent);
+    });
+});
+</script>
 
 <section class="news-single section">
     <div class="container">
@@ -123,20 +135,25 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
   <div class="col-lg-8">
         <div class="single-main">
         <h2 class="section-title fade-in">【完整指南】輕鬆了解水雷射微創植牙</h2>
-          <!-- News Head -->
-          <div class="news-head" style="margin-bottom: 1rem;">
+        <div class="news-head" style="margin-bottom: 1rem;">
             <img src="img/implant-header.png" width="100%" height="auto">
           </div>
+        <div id="menu">
+    <ul>
+        <h3><a style="color: rgba(57, 2, 91, 0.809);" href="#part1">1.植牙費用參考</a></h3>
+        <h3><a style="color: rgba(57, 2, 91, 0.809);" href="#part2">2.植牙三大階段流程說明</a></h3>
+        <h3><a style="color: rgba(57, 2, 91, 0.809);" href="#part3">3.植牙術後注意事項</a></h3>
+    </ul>
+</div>
 
-          <!-- News Text -->
-          <div class="news-text">
-             <h3 style="text-align: center; margin-top: 1.5rem;">為什麼選擇微創水雷射植牙？</h3>
-                    <p>1.幾乎無痛感： 一般拔牙痛感若為 10 分，植牙僅約 0～1 分，放輕鬆即可。
-                    <br>2.微創不腫痛： 利用水雷射深層滅菌與生物刺激，破壞小、出血少、術後恢復極快。
-                    <br>3.精準高安全： 搭配 4D 電腦導航（口腔 GPS），精準避開下顎神經管與上顎鼻竇槍，安心有保障。</p>
 
-            <h4>植牙費用參考</h4>
-            <p><strong>植牙費用採「透明分段計費」(做到哪付到哪)，讓您清晰掌控醫療預算：</strong>
+          <!-- News Head -->
+          
+<!-- 第一部分 -->
+<section id="part1">
+    <h1>1.植牙費用參考</h1>
+    <div class="news-text">
+    <p><strong>植牙費用採「透明分段計費」(做到哪付到哪)，讓您清晰掌控醫療預算：</strong>
             <p><strong>1. 第一階段：植體植入（人工牙根）</strong>
             <br>•	台灣植體： 60,000 元 / 顆
             <br>•	歐洲植體： 原價100,000 元 ➔ 因潘院長為歐洲植體講師，廠商有補助患者3萬元 
@@ -150,12 +167,64 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
             <div style="text-align: center;">
             <img src="img/implantA.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
             </div>
-            <p><strong></strong></p>
-            <div style="display: flex; justify-content: center;">
-            <a href="https://line.me/R/ti/p/@vfy7029w" class="btn btn-primary py-2 px-4">馬上諮詢</a>
+            <div style="text-align: center;">
+            <img src="img/i4.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
             </div>
-            <h4 style="margin-top: 2rem;">植牙三大階段流程說明</h4>
-            <h5>階段一：術前準備與評估</h5>
+            <div style="text-align: center;">
+            <img src="img/i5.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <section class="treatment-table-section">
+  <div class="container">
+    <h1 style="text-align: center;">為何本診所的微創植牙收費比較高？</h1>
+    <table class="treatment-table">
+      <thead>
+        <tr>
+          <th>一般診所</th>
+          <th>本診所</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>X光</td>
+          <td>3D電腦斷層</td>
+        </tr>
+        <tr>
+          <td>一般麻藥管600元以內</td>
+          <td>電動麻槍68000元</td>
+        </tr>
+        <tr>
+          <td>手術刀片15元+手術刀柄300元,需切開翻瓣縫合,故手術疼痛度高、腫脹度明顯,感染機率提升</td>
+          <td>數百萬元(微創術式不需開刀,少流血、少腫痛,提高成功率)4D電腦導航儀300多萬元</td>
+        </tr>
+        <tr>
+          <td>植牙機10萬元上下</td>
+          <td>雷同</td>
+        </tr>
+        <tr>
+          <td>傳統印模製作假牙</td>
+          <td>3D電腦掃描及數位製作精準假牙100多萬元</td>
+        </tr>
+         <tr>
+          <td>多數沒有</td>
+          <td>術後雷射追蹤保養及保固延長</td>
+        </tr>
+         <tr>
+          <td>設備成本百萬以內</td>
+          <td>設備成本千萬以上</td>
+        </tr>
+         <p style="text-align: center;"><strong>了解的患者都說本診所的CP値極高！魔法牙醫關心您！</strong></p>
+      </tbody>
+    </table>
+  </div>
+       </section>
+    </div>
+</section>
+
+<!-- 第二部分 -->
+<section id="part2">
+    <h1>2.植牙三大階段流程說明</h1>
+    <div class="news-text">
+     <h5 style="color: rgba(220, 100, 2, 0.809);">階段一：術前準備與評估</h5>
             <p>植牙前的溝通與精準檢查，是成功最重要的基礎。</p>
             <p><strong>1.補骨：</strong>如果缺牙時間太久、牙周病導致骨頭吸收，或是齒槽骨天生較薄，就必須透過「補骨（齒槽骨重建）」來鋪平與打穩地基！</p>
             <div style="text-align: center;">
@@ -204,10 +273,8 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
             </span>
             </a>
             </div>
-            <h5>階段二：植牙手術當天 植牙全流程整體約需 6～8 個月</h5>
+            <h5 style="margin-top: 1.5rem; color:  rgba(220, 100, 2, 0.809);">階段二：植牙手術當天</h5>
             <p>若您的缺牙區骨質較薄或不足，潘院長會先為您進行齒槽骨重建（補骨）。待地基穩固後，再結合<strong>微創水雷射</strong>與<strong>4D 電腦導航儀</strong>進行精準植牙，過程快速、舒適且幾乎不腫痛。</p>
-            <p><strong>第二階段——植牙手術當天</strong>
-            <br>骨頭生長達標後，即可進行植體植入。手術過程快速且非常舒適：</p>
             <p><strong>1. 術前報到 3 步驟</strong>
             <br>確認已看完 衛教影片 : 六部曲
             <br>確認並簽屬手術前相關同意書與治療計畫。
@@ -216,10 +283,8 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
             <br>全程局部麻醉： 過程完全無痛感，放鬆心情即可。
             <br>4D 電腦導航儀精準定位： 如同口腔 GPS，精確避開神經與血管，將植體鎖入最佳位置。
             <br>水雷射輔助滅菌： 邊切削邊滅菌，具生物刺激功效，傷口小、流血少，降低發炎與感染率（特定條件下植入過程甚至不到 5 分鐘）。</p>
-            <p><strong>3. 術後即刻照顧</strong>
-            <br>止血與衛教： 咬緊止血紗布約 30～60 分鐘，並領取專屬衛教指示。</p>
-            <p style="color: red;"> 麻藥退去後即可正常享用下一餐！</p>
-            <p><strong>第三階段——安裝支台齒與正式牙冠</strong></p>
+            <p style="color: red;"> 麻藥退去後才可正常享用下一餐喔！</p>
+            <h5 style="margin-top: 1.5rem; color:  rgba(220, 100, 2, 0.809);">階段三：安裝支台齒與正式牙冠</h5>
             <p>當骨質密度測量達標後，即可進入最後的假牙製作與裝戴階段：
             <p><strong>Step 1. 安裝支台齒（分兩種情況）</strong></p>
             <p>【情況 A：原廠支台齒】 評估符合規格者，當天即可直接安裝。
@@ -229,59 +294,47 @@ nav { z-index: 1000; }                   /* 導覽在最上層 */
             <p>正式牙冠密合： 裝上專屬的全瓷冠或金屬牙冠，精細微調咬合與鄰牙接觸面。
             <br>重獲健全咬合： 順利完成療程，恢復自然美觀與強健的咀嚼功能！
             </p>
+            </div>
+</section>
+
+<!-- 第三部分 -->
+<section id="part3">
+    <h1>3.植牙術後注意事項</h1>
+        <div class="news-text">
+          <div class="yt-fallback" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden;">
+            <img src="https://i.ytimg.com/vi/FfWqUSYXEeo/hqdefault.jpg"alt="影片縮圖"style="width:100%; height:auto; object-fit:cover;margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=FfWqUSYXEeo" target="_blank" rel="noopener"style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+            <span style="background:rgba(0,0,0,.55); padding:4px 6px; border-radius:999px; color:#fff; font-weight:600;">
+              ▶ 在 YouTube 上觀看
+            </span>
+            </a>
+            </div>
+    <p><strong>手術後清潔照護步驟</strong>
+    <br>1.回去更換新的牙刷及牙膏(其他牙齒牙齦肉肉的地方還是要正常刷牙喔)
+    <br>2.傷口前5-7天用手指頭擠潔牙泡泡清潔
+    <br>3.第二周更換手術超軟毛牙刷一樣擠潔牙泡泡清潔傷口
+    <br>4.第三周可正常使用一般軟毛刷牙
+    <br>影片中提到的漱口水，因政府要求不能使用分裝瓶，故現在提供沒有小瓶漱口水，可以自行做購買唷
+    </p>
+    <p><strong>關鍵營養補充（加速傷口修復）</strong>
+    <br>為了讓大窟窿或較大的傷口快速癒合、促進細胞生長，潘院長特別提醒您回去後補充以下營養：
+    <br>•	黃豆胚軸： 含有豐富的活性營養成分，能提供細胞修復所需的關鍵營養，促進組織生長。
+    <br>•	高純度魚油：
+    <br>o	抗發炎： 降低術後發炎反應，舒緩腫痛。
+    <br>o	促進循環： 幫助通血管，帶來充足養分與氧氣。
+    <br>o	豐富 DHA： 促進新細胞生長，讓傷口窟窿長得更快更漂亮、大大降低感染率！
+    <br>提醒您： 之前在診所購買的保健食品（黃豆胚軸、魚油等）一定要記得按時補充！多一分營養，傷口就多一分修復力。
+</p>
+</section>
+
+
+
+
+
             
-
-
-
-
-
-            <section class="treatment-table-section">
-  <div class="container">
-    <h2>為何本診所的微創植牙收費比較高？</h2>
-    <table class="treatment-table">
-      <thead>
-        <tr>
-          <th>一般診所</th>
-          <th>本診所</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>X光</td>
-          <td>3D電腦斷層</td>
-        </tr>
-        <tr>
-          <td>一般麻藥管600元以內</td>
-          <td>電動麻槍68000元</td>
-        </tr>
-        <tr>
-          <td>手術刀片15元+手術刀柄300元,需切開翻瓣縫合,故手術疼痛度高、腫脹度明顯,感染機率提升</td>
-          <td>數百萬元(微創術式不需開刀,少流血、少腫痛,提高成功率)4D電腦導航儀300多萬元</td>
-        </tr>
-        <tr>
-          <td>植牙機10萬元上下</td>
-          <td>雷同</td>
-        </tr>
-        <tr>
-          <td>傳統印模製作假牙</td>
-          <td>3D電腦掃描及數位製作精準假牙100多萬元</td>
-        </tr>
-         <tr>
-          <td>多數沒有</td>
-          <td>術後雷射追蹤保養及保固延長</td>
-        </tr>
-         <tr>
-          <td>設備成本百萬以內</td>
-          <td>設備成本千萬以上</td>
-        </tr>
-         <p style="text-align: center;"><strong>了解的患者都說本診所的CP値極高！魔法牙醫關心您！</strong></p>
-      </tbody>
-    </table>
-  </div>
-       </section>
        </div>
        </div>
-       </div>
+       
 
        
 <div class="col-lg-4">
