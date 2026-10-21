@@ -38,6 +38,71 @@
 /* 防止頂部 fixed 導覽列把上方內容壓住 */
 body { padding-top: 80px; }             /* 依實際導覽高度微調 */
 nav { z-index: 1000; }                   /* 導覽在最上層 */
+.sticky-sidebar {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.mobile-sidebar-toggle { display: none; }
+@media (max-width: 991.98px) {
+  .sticky-sidebar {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+  .mobile-sidebar-toggle {
+    display: block;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1100;
+    width: auto;
+    max-width: calc(100vw - 32px);
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #9013dd;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .sticky-sidebar:not(.is-open) > :not(.mobile-sidebar-toggle) {
+    display: none;
+  }
+  .sticky-sidebar.is-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 1099;
+    width: min(88vw, 400px);
+    max-width: 100vw;
+    max-height: 100dvh;
+    padding: 1rem;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: -8px 0 28px rgba(0, 0, 0, 0.22);
+    animation: sidebar-slide-in 0.25s ease-out;
+  }
+  .sticky-sidebar.is-open > .mobile-sidebar-toggle {
+    position: sticky;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 1rem;
+  }
+  @keyframes sidebar-slide-in {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+}
 </style>
 
 </head>
@@ -88,7 +153,7 @@ links.forEach(link => {
 <section class="news-single section">
     <div class="container">
   <div class="row">
-  <div class="col-lg-8">
+  <div class="col-lg-8 order-2 order-lg-1">
         <div class="single-main">
         <h2 class="section-title fade-in">【完整指南】輕鬆了解水雷射微創植牙</h2>
         <div class="news-head" style="margin-bottom: 1rem;">
@@ -323,7 +388,8 @@ links.forEach(link => {
        
 
        
-<div class="col-lg-4">
+        <div class="col-lg-4 sticky-sidebar order-1 order-lg-2">
+          <button type="button" class="mobile-sidebar-toggle" aria-expanded="false" onclick="const sidebar = this.closest('.sticky-sidebar'); const isOpen = sidebar.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); this.textContent = isOpen ? '收起側欄資訊' : '開啟側欄資訊';">開啟側欄資訊</button>
           <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 mb-4" style="margin-top: 5%;">整體醫學新知專欄</h4>
 
           <div class="d-flex rounded overflow-hidden mb-3">
@@ -349,6 +415,19 @@ links.forEach(link => {
             <h5>找對專家，您也能綻放巨星般自信的笑容！</h5>
             <a href="https://line.me/R/ti/p/@vfy7029w" class="btn btn-primary py-2 px-4">馬上諮詢</a>
           </div>
+
+        
+        <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 mb-3 mt-4">【完整指南】水雷射微創植牙</h4>
+        <div class="bg-light rounded text-center" style="padding: 30px;">
+        <h5></h5>
+        <ul>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part1">1.微創植牙收費比較高？</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part2">2.植牙三大階段流程說明</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#parta">A.植牙歷史小學堂</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part2">B.導航儀使用說明</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part3">3.植牙術後注意事項</a></p>
+        </ul>
+        </div>
         </div>
       </section>
 
