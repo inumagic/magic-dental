@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法牙醫診所 | 微創植牙</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="魔法牙醫" name="keywords">
+    <meta content="免開刀、傷口小、恢復快！結合水雷射滅菌與3D電腦斷層導航，讓植牙更安全、舒適，術後腫痛大幅降低。" name="description">
+    <meta property="og:image" content="" />
+    <link href="img/icon-logo.jpg" rel="icon">
+    <link href="templatemo-personal-style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<style>
+/* 若動畫 JS 沒執行成功，至少內容可見 */
+.fade-in, .slide-in-left, .slide-in-right {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* iFrame 外框與內層都確實可見且撐滿 */
+.about-iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.about-iframe iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* 防止頂部 fixed 導覽列把上方內容壓住 */
+body { padding-top: 80px; }             /* 依實際導覽高度微調 */
+nav { z-index: 1000; }                   /* 導覽在最上層 */
+.sticky-sidebar {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.mobile-sidebar-toggle { display: none; }
+@media (max-width: 991.98px) {
+  .sticky-sidebar {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+  .sticky-sidebar:not(.is-open) > .sidebar-content {
+    display: none;
+  }
+  .sticky-sidebar.is-open > .sidebar-content {
+    display: block;
+  }
+  .mobile-sidebar-toggle {
+    display: block;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1100;
+    width: auto;
+    max-width: calc(100vw - 32px);
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #9013dd;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .sticky-sidebar:not(.is-open) > :not(.mobile-sidebar-toggle) {
+    display: none;
+  }
+  .sticky-sidebar.is-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 1099;
+    width: min(88vw, 400px);
+    max-width: 100vw;
+    max-height: 100dvh;
+    padding: 1rem;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: -8px 0 28px rgba(0, 0, 0, 0.22);
+    animation: sidebar-slide-in 0.25s ease-out;
+  }
+  .sticky-sidebar.is-open > .mobile-sidebar-toggle {
+    position: sticky;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 1rem;
+  }
+  @keyframes sidebar-slide-in {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+}
+</style>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+          <img src="img/魔法牙醫新LOGO標準字(8個版)-05.png" width="180" height="auto">
+            <ul class="nav-links">
+                <li><a href="inumagic.com" class="nav-item nav-link active">首頁</a></li>
+                <!--<li><a href="fpc.html">快速矯正</a></li>
+                <li><a href="perio.html">牙周病治療</a></li>-->
+                <li><a href="#">微創植牙</a></li>
+                <li><a href="https://lin.ee/j9wq0SS" class="nav-item nav-link">聯絡我們</a></li>
+
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+           <li><a href="inumagic.com" class="nav-item nav-link active">首頁</a></li>
+                <!--<li><a href="fpc.html">快速矯正</a></li>
+                <li><a href="perio.html">牙周病治療</a></li>-->
+                <li><a href="#">微創植牙</a></li>
+                <li><a href="https://lin.ee/j9wq0SS" class="nav-item nav-link">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    
+<script>
+// 點擊目錄時在主控台顯示
+const links = document.querySelectorAll("#menu a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        console.log("跳到：" + link.textContent);
+    });
+});
+</script>
+
+<section class="news-single section">
+    <div class="container">
+  <div class="row">
+  <div class="col-lg-8 order-2 order-lg-1">
+        <div class="single-main">
+        <h2 class="section-title fade-in">【完整指南】輕鬆了解水雷射微創植牙</h2>
+        <div class="news-head" style="margin-bottom: 1rem;">
+            <img src="img/implant-header.png" width="100%" height="auto">
+          </div>
+        <div id="menu">
+   
+</div>
+
+
+          <!-- News Head -->
+          
+<!-- 第一部分 -->
+<section id="part1">
+    <h1>1.微創植牙收費比較高？</h1>
+    <div class="news-text">
+    <p><strong>植牙費用為<span style="color: red;">植體植入（人工牙根）</span>+<span style="color: rgba(220, 100, 2, 0.809);">支台齒若有</span>+<span style="color: green;">牙冠</span>，<span style="color: darkred;">總費用為8-14萬/顆 </span><span style="color:dodgerblue;">(水雷射微創術式、補骨(若有)、鼻竇增高(若有)、導航儀等費用另計)</span>，採「透明分段計費」(做到哪付到哪)，讓您清晰掌控醫療預算：</strong>
+            <div style="text-align: center;">
+            <img src="img/implantA.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <p><strong>1. 第一階段：植體植入（人工牙根）</strong>
+            <br>•	台灣植體： 6萬元 / 顆
+            <br>•	歐洲植體： 原價10萬 元 ➔ 因潘院長為歐洲植體講師，廠商有補助患者3萬元 
+            <br>•	美國植體： 8萬元 / 顆
+            <br>•	全程水雷射術式：每顆 1萬 元</p>
+            <p><strong>2. 第二階段：支台齒與正式牙冠（約 3 個月至半年後）</strong>
+            <br>•	全瓷牙冠 + 支台齒： 4萬 元 / 顆 (自然美觀、生物相容性高)
+            <br>•	金屬牙冠 + 支台齒： 2萬 元 / 顆
+            <br>•	前牙客製化加購： 前牙美觀區若選用客製化轉角度白色氧化鋯，須另加 2萬 元 / 顆
+            </p>
+            <div style="text-align: center;">
+            <img src="img/i6.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <div style="text-align: center;">
+            <img src="img/i7.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <h2 style="text-align: center; color:crimson; line-height: 1.6;">植牙手術結束後會再拍電腦斷層以確認植體位置、以及會讓患者照射低能量雷射(Low Level Laser Treatment)促進骨整合，讓軟組織及硬組織都修復得更快</h2>
+            <div style="text-align: center;">
+            <img src="img/i8.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+            
+            <section class="treatment-table-section">
+
+  <div class="container">
+    <h1 style="text-align: center;">為何本診所的微創植牙收費比較高？</h1>
+    <table class="treatment-table">
+      <thead>
+        <tr>
+          <th>一般診所</th>
+          <th>本診所</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>X光</td>
+          <td>3D電腦斷層</td>
+        </tr>
+        <tr>
+          <td>一般麻藥管600元以內</td>
+          <td>電動麻槍68000元</td>
+        </tr>
+        <tr>
+          <td>手術刀片15元+手術刀柄300元,需切開翻瓣縫合,故手術疼痛度高、腫脹度明顯,感染機率提升</td>
+          <td>數百萬元(微創術式不需開刀,少流血、少腫痛,提高成功率)4D電腦導航儀300多萬元</td>
+        </tr>
+        <tr>
+          <td>植牙機10萬元上下</td>
+          <td>雷同</td>
+        </tr>
+        <tr>
+          <td>傳統印模製作假牙</td>
+          <td>3D電腦掃描及數位製作精準假牙100多萬元</td>
+        </tr>
+         <tr>
+          <td>多數沒有</td>
+          <td>術後雷射追蹤保養及保固延長</td>
+        </tr>
+         <tr>
+          <td>設備成本百萬以內</td>
+          <td>設備成本千萬以上</td>
+        </tr>
+         <p style="text-align: center;"><strong>了解的患者都說本診所的CP値極高！魔法牙醫關心您！</strong></p>
+      </tbody>
+    </table>
+  </div>
+       </section>
+    </div>
+</section>
+
+<section id="parta">
+      <div class="news-text">
+<h3 style="text-align: center;">植牙歷史小學堂</h3>
+            <img src="img/i9.png" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            </section>
+
+<section id="partb"><div style="text-align: center; margin-top: 1.5rem;">
+  <div class="news-text">
+            <h3>導航儀使用說明</h3>
+            <img src="img/i10.png" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div></section>
+
+
+<!-- 第二部分 -->
+<section id="part2">
+    <h1>2.植牙三大階段流程說明</h1>
+    <div class="news-text">
+     <h5 style="color: rgba(220, 100, 2, 0.809);">階段一：術前準備與評估</h5>
+            <p>植牙前的溝通與精準檢查，是成功最重要的基礎。</p>
+            <p><strong>1.補骨：</strong>如果缺牙時間太久、牙周病導致骨頭吸收，或是齒槽骨天生較薄，就必須透過「補骨（齒槽骨重建）」來鋪平與打穩地基！</p>
+            <div style="text-align: center;">
+            <img src="img/i1.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <p><strong>精準評估與補骨：</strong> 透過 3D CBCT 電腦斷層量測缺骨範圍，填入骨粉並覆蓋再生膜。
+            <br><strong>•	等待骨生成： 補骨後需等待約 3 個月，讓新骨頭順利生長穩固。</strong></p>
+            </p>
+            <p><strong>（視情況）上顎鼻竇增高術： 若植牙位置在上顎後牙區且骨頭高度不夠，會視情況同時進行「鼻竇抬高術」，向上爭取足夠的植牙深度。</strong></p>
+            <div style="text-align: center;">
+            <img src="img/i2.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <div style="text-align: center;">
+            <img src="img/i3.jpg" style="border-radius: 10px; width: 100%; display: block; margin: 0 auto;">
+            </div>
+            <p><strong>2.3D 斷層精準掃描：</strong>拍攝全口 3D 電腦斷層（CT），精確評估齒槽骨高度、寬度與神經位置。</p>
+            <p><strong>3.用藥與健康評估：</strong>
+            <br>告之是否服用慢性病藥物（如抗凝血劑、骨質疏鬆藥物）。
+            <br>手術前 2 天避免食用活血食物（如人蔘、銀杏、高劑量維生素 E）。
+            </p>
+            <p><strong>飲食建議： 手術當天可先吃飽再過來，放鬆心情、睡眠充足即可。</strong></p>
+            <div class="yt-fallback" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden;">
+            <h5 style="margin-top: 2rem;">1.	植牙術前術後的注意事項，請要仔細觀看唷!!!!</h5>
+            <img src="https://i.ytimg.com/vi/PU2LHUWeZhg/hqdefault.jpg"alt="影片縮圖"style="width:100%; height:auto; object-fit:cover;margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=PU2LHUWeZhg" target="_blank" rel="noopener"style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+            <span style=" background:rgba(0,0,0,.55); padding:4px 6px; border-radius:999px; color:#fff; font-weight:600;">
+              ▶ 在 YouTube 上觀看
+            </span>
+            </a>
+            </div>
+            <div class="yt-fallback" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden;">
+            <h5 style="margin-top: 2rem;">2.	【植牙迷思大解密!】什麼?! 植牙手術竟然 五分鐘 就能完成！歐美植體、台灣植體，哪種適合我?  聽潘院長短短4分鐘的清楚說明，</h5>
+            <img src="https://i.ytimg.com/vi/6cOKHse2PoM/hqdefault.jpg"alt="影片縮圖"style="width:100%; height:auto; object-fit:cover;margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=6cOKHse2PoM" target="_blank" rel="noopener"style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+            <span style="background:rgba(0,0,0,.55); padding:4px 6px; border-radius:999px; color:#fff; font-weight:600;">
+              ▶ 在 YouTube 上觀看
+            </span>
+            </a>
+            </div>
+             <div class="yt-fallback" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden;">
+            <h5 style="margin-top: 2rem;">3.	[讓世界都看見]  節目採訪牙周病救星  [水雷射微創治療]微創植牙   [4D電腦導航新科技]牙醫的矛盾→[ 潔牙泡泡] 研發動機</h5>
+            <img src="https://i.ytimg.com/vi/7iXmLMb1AXA/hqdefault.jpg"alt="影片縮圖"style="width:100%; height:auto; object-fit:cover;margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=7iXmLMb1AXA" target="_blank" rel="noopener"style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+            <span style="background:rgba(0,0,0,.55); padding:4px 6px; border-radius:999px; color:#fff; font-weight:600;">
+              ▶ 在 YouTube 上觀看
+            </span>
+            </a>
+            </div>
+            <h5 style="margin-top: 1.5rem; color:  rgba(220, 100, 2, 0.809);">階段二：植牙手術當天</h5>
+            <p>若您的缺牙區骨質較薄或不足，潘院長會先為您進行齒槽骨重建（補骨）。待地基穩固後，再結合<strong>微創水雷射</strong>與<strong>4D 電腦導航儀</strong>進行精準植牙，過程快速、舒適且幾乎不腫痛。</p>
+            <p><strong>1. 術前報到 3 步驟</strong>
+            <br>確認已看完 衛教影片 : 六部曲
+            <br>確認並簽屬手術前相關同意書與治療計畫。
+            <br>依醫囑服用預防性藥物，讓身體維持最佳防護狀態。</p>
+            <p><strong>2. 正式手術過程（單顆約 30～60 分鐘）</strong>
+            <br>全程局部麻醉： 過程完全無痛感，放鬆心情即可。
+            <br>4D 電腦導航儀精準定位： 如同口腔 GPS，精確避開神經與血管，將植體鎖入最佳位置。
+            <br>水雷射輔助滅菌： 邊切削邊滅菌，具生物刺激功效，傷口小、流血少，降低發炎與感染率（特定條件下植入過程甚至不到 5 分鐘）。</p>
+            <p style="color: red;"> 麻藥退去後才可正常享用下一餐喔！</p>
+            <h5 style="margin-top: 1.5rem; color:  rgba(220, 100, 2, 0.809);">階段三：安裝支台齒與正式牙冠</h5>
+            <p>當骨質密度測量達標後，即可進入最後的假牙製作與裝戴階段：
+            <p><strong>Step 1. 安裝支台齒（分兩種情況）</strong></p>
+            <p>【情況 A：原廠支台齒】 評估符合規格者，當天即可直接安裝。
+            <br>【情況 B：技工所客製化支台齒】 若前牙美觀區或咬合角度較特殊，需經由口掃/印模送交技工所客製化製作，需等待約 7 天。
+            </p>
+            <p><strong>Step 2. 安裝支台齒（分兩種情況）</strong></p>
+            <p>正式牙冠密合： 裝上專屬的全瓷冠或金屬牙冠，精細微調咬合與鄰牙接觸面。
+            <br>重獲健全咬合： 順利完成療程，恢復自然美觀與強健的咀嚼功能！
+            </p>
+            </div>
+</section>
+
+<!-- 第三部分 -->
+<section id="part3">
+    <h1>3.植牙術後注意事項</h1>
+        <div class="news-text">
+          <div class="yt-fallback" style="position:relative; width:100%; aspect-ratio:16/9; border-radius:16px; overflow:hidden;">
+            <img src="https://i.ytimg.com/vi/FfWqUSYXEeo/hqdefault.jpg"alt="影片縮圖"style="width:100%; height:auto; object-fit:cover;margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=FfWqUSYXEeo" target="_blank" rel="noopener"style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-decoration:none;">
+            <span style="background:rgba(0,0,0,.55); padding:4px 6px; border-radius:999px; color:#fff; font-weight:600;">
+              ▶ 在 YouTube 上觀看
+            </span>
+            </a>
+            </div>
+    <p><strong>手術後清潔照護步驟</strong>
+    <br>1.回去更換新的牙刷及牙膏(其他牙齒牙齦肉肉的地方還是要正常刷牙喔)
+    <br>2.傷口前5-7天用手指頭擠潔牙泡泡清潔
+    <br>3.第二周更換手術超軟毛牙刷一樣擠潔牙泡泡清潔傷口
+    <br>4.第三周可正常使用一般軟毛刷牙
+    <br>影片中提到的漱口水，因政府要求不能使用分裝瓶，故現在提供沒有小瓶漱口水，可以自行做購買唷
+    </p>
+    <p><strong>關鍵營養補充（加速傷口修復）</strong>
+    <br>為了讓大窟窿或較大的傷口快速癒合、促進細胞生長，潘院長特別提醒您回去後補充以下營養：
+    <br>•	黃豆胚軸： 含有豐富的活性營養成分，能提供細胞修復所需的關鍵營養，促進組織生長。
+    <br>•	高純度魚油：
+    <br>o	抗發炎： 降低術後發炎反應，舒緩腫痛。
+    <br>o	促進循環： 幫助通血管，帶來充足養分與氧氣。
+    <br>o	豐富 DHA： 促進新細胞生長，讓傷口窟窿長得更快更漂亮、大大降低感染率！
+    <br>提醒您： 之前在診所購買的保健食品（黃豆胚軸、魚油等）一定要記得按時補充！多一分營養，傷口就多一分修復力。
+</p>
+</section>
+
+
+
+
+       </div>
+
+            
+       </div>
+       
+
+        <div class="col-lg-4 sticky-sidebar order-1 order-lg-2">
+          <button type="button" class="mobile-sidebar-toggle" aria-expanded="false" aria-controls="sidebar-content" onclick="const sidebar = this.closest('.sticky-sidebar'); const isOpen = sidebar.classList.toggle('is-open'); this.setAttribute('aria-expanded', isOpen); this.textContent = isOpen ? '收起側欄資訊' : '開啟側欄資訊'; document.getElementById('sidebar-content').hidden = !isOpen;">開啟側欄資訊</button>
+          <div class="sidebar-content" id="sidebar-content">
+          <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 mb-4" style="margin-top: 5%; width: max-content; max-width: 100%;">整體醫學新知專欄</h4>
+
+          <div class="d-flex rounded overflow-hidden mb-3">
+            <img class="img-fluid" src="img/c.png" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+            <a href="https://inumagic.github.io/inumagic-mrc/b.html" class="h5 d-flex align-items-center bg-light px-3 mb-0" 
+              style="height: 100px; width: 100%; display: flex; align-items: center;">為什麼小孩牙齒亂、鼻子過敏、學習力差？竟然是「它」惹的禍！</a>
+          </div>
+
+          <div class="d-flex rounded overflow-hidden mb-3">
+            <img class="img-fluid" src="img/100.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+            <a href="https://inumagic.github.io/periodontitis" class="h5 d-flex align-items-center bg-light px-3 mb-0" 
+              style="height: 100px; width: 100%; display: flex; align-items: center;">100歲不掉牙的祕訣</a>
+          </div>
+
+          <div class="d-flex rounded overflow-hidden mb-3">
+            <img class="img-fluid" src="img/6.png" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+            <a href="https://www.inumagic.com/article/312" class="h5 d-flex align-items-center bg-light px-3 mb-0" 
+              style="height: 100px; width: 100%; display: flex; align-items: center;">牙周病影響全身健康？這些疾病竟然都和牙齦炎有關！</a>
+          </div>
+            
+          <div class="bg-light rounded text-center mb-3" style="padding: 30px;">
+            <h5>找對專家，您也能綻放巨星般自信的笑容！</h5>
+            <a href="https://line.me/R/ti/p/@vfy7029w" class="btn btn-primary py-2 px-4">馬上諮詢</a>
+          </div>
+
+        
+        <div class="bg-light rounded text-center" style="padding: 30px;">
+        <ul>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part1">1.微創植牙收費比較高？</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part2">2.植牙三大階段流程說明</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#parta">A.植牙歷史小學堂</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part2">B.導航儀使用說明</a></p>
+        <p><a style="font-size: 1.2rem; text-align: start;" href="#part3">3.植牙術後注意事項</a></p>
+        </ul>
+        </div>
+          </div>
+        </div>
+      </section>
+
+       <section class="news-single section">
+        <div class="container">
+        <div class="single-main">
+        <div style="text-align: center; margin-top: 2rem;">
+        <h2 class="section-title fade-in">魔法牙醫的高階醫療設備</h2>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+            <img src="img/0530.jpg" alt="3D數位電腦斷層掃描" style="border-radius: 10px; width: 60%; display: block; margin: 0 auto;">
+            </div>
+            <div class="col-lg-6 col-12">
+            <p style="margin-top: 10px; font-size: 1.2rem;"><strong>3D數位電腦斷層掃描</strong></p>
+            <p style="font-size: 1.2rem;">劑量比傳統電腦斷層低許多，大幅降低輻射風險。能立體呈現口腔骨骼與牙齒結構，醫師可更精準評估植牙與治療計畫。患者安心照、醫師診斷更準確。</p>
+            </div>
+            <div class="col-lg-6 col-12">
+            <img src="img/e018.jpg" alt="4D數位導航系統" style="border-radius: 10px; width: 60%; display: block; margin: 0 auto;">
+            </div>
+            <div class="col-lg-6 col-12">
+            <p style="margin-top: 10px; font-size: 1.2rem;"><strong>4D數位導航系統</strong></p>
+            <p style="font-size: 1.2rem;">就像 GPS 導航一樣，能即時掌握植體與骨頭、神經血管的位置。大幅提升手術精準度與安全性，讓植牙過程更可控、更安心。是現代植牙不可或缺的高科技輔助工具。</p>
+            </div>
+            <div class="col-lg-6 col-12">
+            <img src="img/SAPPHIRE.png" alt="新式水雷射" style="border-radius: 10px; width: 60%; display: block; margin: 0 auto;">
+            </div>
+            <div class="col-lg-6 col-12">
+            <p style="margin-top: 10px; font-size: 1.2rem;"><strong>新式水雷射</strong></p>
+            <p style="font-size: 1.2rem;">以雷射取代傳統手術刀，做到切割、滅菌、止血一次完成。治療過程微創、舒適，傷口小、復原快。特別適合牙周病治療與植牙，帶來全新溫和的醫療體驗。</p>
+          </div>  
+        </div>
+        </div>
+        </div>
+
+
+
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+      
+       
+
+      
+
+<div class="container-xxl case-carousel">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1>真實案例分享</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img src="img/IMG_0508.JPG" style="width: 100; height: auto;">
+                    
+                </div>
+                <div class="testimonial-item text-center">
+                    <img src="img/IMG_0512.JPG" style="width: 100; height: auto;">
+                    
+                </div>
+                <div class="testimonial-item text-center">
+                    <img src="img/IMG_0524.JPG" style="width: 100; height: auto;">
+                    
+                </div>
+
+                <div class="testimonial-item text-center">
+                    <img src="img/投影片119.JPG" style="width: 100; height: auto;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+    
+
+    <!-- Footer -->
+     
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">聯絡我們</h5>
+                    <p class="mb-2">地址：台北市中山區南京東路三段9號3樓</p>
+                    <p class="mb-2">諮詢專線：(02) 250 21826</p>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">延伸閱讀</h5>
+                    <a  href="https://inumagic.github.io/inumagic-mrc/">隱形矯正68000元起！</a>
+                    <a href="https://inumagic.github.io/periodontitis/">牙凍齡攻略：讓你越笑越年輕！</a>
+             
+                </div>
+            </div>
+     
+        </div>
+        
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="https://inumagic.com/">魔法牙醫診所版權所有</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 放在 </body> 之前，且每個只載一次 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="templatemo-personal-javascripts.js"></script>
+<script>
+$(function(){
+  $(".testimonial-carousel").owlCarousel({
+    items:1, loop:true, autoplay:true, autoplayTimeout:3000,
+    autoplayHoverPause:true, nav:false, dots:false
+  });
+});
+</script>
+
+
+</body>
+</html>
